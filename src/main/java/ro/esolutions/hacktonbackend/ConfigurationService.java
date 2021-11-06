@@ -42,6 +42,7 @@ public class ConfigurationService {
                 .lightStart(configurationModel.getLightStartHour() * 60 + configurationModel.getLightStartMinute())
                 .lightEnd(configurationModel.getLightEndHour() * 60 + configurationModel.getLightEndHour())
                 .containerVolume(configurationModel.getContainerVolume())
+                .minSoilHum(configurationModel.getMinSoilHum())
                 .build();
     }
 

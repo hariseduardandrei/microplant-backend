@@ -19,4 +19,5 @@ public class MqttConfigurationModel {
     private Integer lightStart;
     private Integer lightEnd;
     private Integer containerVolume;
+    private Integer minSoilHum;
 }

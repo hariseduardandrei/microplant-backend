@@ -17,4 +17,5 @@ public class ConfigurationModel {
     private Integer lightEndHour;
     private Integer lightEndMinute;
     private Integer containerVolume;
+    private Integer minSoilHum;
 }
