@@ -24,6 +24,7 @@ public class Telemetry {
     private BigDecimal temperature;
     private BigDecimal airHumidity;
     private BigDecimal soilHumidity;
+    private BigDecimal containerVolume;
 
     @Type(type = "org.hibernate.type.LocalDateTimeType")
     private LocalDateTime lastUpdated;

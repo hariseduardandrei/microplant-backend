@@ -12,8 +12,9 @@ import java.math.BigDecimal;
 @RequiredArgsConstructor
 @AllArgsConstructor
 public class TelemetryModel {
-
     private BigDecimal temperature;
     private BigDecimal airHumidity;
     private BigDecimal soilHumidity;
+    private BigDecimal containerVolume;
+
 }

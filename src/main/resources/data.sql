@@ -12,3 +12,5 @@ CREATE TABLE telemetry
     soil_humidity numeric   NOT NULL,
     last_updated  timestamp not null default now()
 );
+
+ALTER TABLE telemetry ADD COLUMN container_volume numeric;
