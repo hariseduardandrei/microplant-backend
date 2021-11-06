@@ -10,7 +10,6 @@ import lombok.Data;
 @Builder
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class MqttConfigurationModel {
-
     private Integer red1;
     private Integer green1;
     private Integer blue1;

@@ -17,6 +17,10 @@ public class ApiRestController {
     private final TelemetryService telemetryService;
     @NonNull
     private final ConfigurationService configurationService;
+    @NonNull
+    private final PumpService pumpService;
+    @NonNull
+    private final LightsService lightsService;
 
     @GetMapping("/telemetry")
     public ResponseEntity<TelemetryModel> getTelemetryModel() {
@@ -26,6 +30,18 @@ public class ApiRestController {
     @PostMapping("/save_config")
     public ResponseEntity<Object> saveConfig(@RequestBody final ConfigurationModel configurationModel) {
         configurationService.saveConfig(configurationModel);
+        return ResponseEntity.ok("{}");
+    }
+
+    @PostMapping("/pump_demo")
+    public ResponseEntity<Object> pumpDemo() {
+        pumpService.runDemo();
+        return ResponseEntity.ok("{}");
+    }
+
+    @PostMapping("/start_lights")
+    public ResponseEntity<Object> startLights(@RequestBody final LightsModel lightsModel) {
+        lightsService.start(lightsModel);
         return ResponseEntity.ok("{}");
     }
 }
