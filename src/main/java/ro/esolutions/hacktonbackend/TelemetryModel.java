@@ -16,5 +16,4 @@ public class TelemetryModel {
     private BigDecimal airHumidity;
     private BigDecimal soilHumidity;
     private BigDecimal containerVolume;
-
 }

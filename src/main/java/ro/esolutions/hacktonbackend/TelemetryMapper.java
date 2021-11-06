@@ -20,6 +20,7 @@ public final class TelemetryMapper {
                 .temperature(telemetry.getTemperature())
                 .airHumidity(telemetry.getAirHumidity())
                 .soilHumidity(telemetry.getSoilHumidity())
+                .containerVolume(telemetry.getContainerVolume())
                 .build();
     }
 }
